@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://animakind.org/schemas/v2/binding-designation.json",
+  "title": "Animakind Binding Designation Record",
+  "description": "Canonical record for a Unique Animakind Binding (UAB) designation: the pairing of a design with an engine, coined by the Studio. Source: the specification, Section 3 and Appendix A.",
+  "type": "object",
+  "required": ["$schema", "designation", "design", "engineering"],
+  "properties": {
+    "$schema": { "const": "https://animakind.org/schemas/v2/binding-designation.json" },
+    "designation": {
+      "description": "UAB designation: [studio]_[family]-[mark]_v[build].[revision]_[strike date]. Studio, Family, a version and a Strike Date are required; Mark is optional; Strike Date is YYYYMMDD, and every advance mints a new one (Section 3.2). A Mark advance re-bases the designation, which restarts at v1.0. The Studio coins the Binding. The Family is the Binding Name; a change of it is a FAMILY_MIGRATION of the same subject, not a new individual. Only a divergence continued as a second line mints a new UII. Segments may be in any script; none is empty or contains whitespace, \"_\" or \"-\".",
+      "type": "string",
+      "pattern": "^[^\\s_-]+_[^\\s_-]+(-[^\\s_-]+)?_v[0-9]+\\.[0-9]+_[0-9]{8}$",
+      "examples": ["lyceum_mariposa-blue_v2.0_20260804"]
+    },
+    "design": {
+      "description": "The Design axis. Mirrors the design designation [company]_[product line]-[product mark]_v[product version] (Section 3.1).",
+      "type": "object",
+      "required": ["type", "studio", "designation", "product_line", "product_version"],
+      "properties": {
+        "type": {
+          "description": "Design Type: the class of designed identity artifact. Open set; in this generation an Animagraph (Section 3.3). A change of Type advances the Mark.",
+          "type": "string",
+          "examples": ["Animagraph"]
+        },
+        "studio": {
+          "description": "The organization that authored the design and coins the Binding. Same party the design designation names as Company.",
+          "type": "string"
+        },
+        "designation": {
+          "description": "The design designation.",
+          "type": "string",
+          "pattern": "^[^\\s_-]+_[^\\s_-]+(-[^\\s_-]+)?_v[0-9]+\\.[0-9]+$",
+          "examples": ["lyceum_aristotle_v1.0"]
+        },
+        "product_line": { "description": "Design lineage. Registered once, never altered.", "type": "string" },
+        "product_mark": {
+          "description": "Optional design-side generation marker. Null when absent; a designation without one is well-formed.",
+          "type": ["string", "null"]
+        },
+        "product_version": {
+          "description": "Version of the design as released, v[major].[minor]; recorded here without the leading v, as in Appendix A.",
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "engineering": {
+      "description": "The engine's own designation, recorded as its manufacturer publishes it. Must carry at minimum a Manufacturer, an engine identifier, and that manufacturer's version (Section 3.2). A field the manufacturer does not publish is marked absent (null), not guessed.",
+      "type": "object",
+      "required": ["manufacturer", "engine", "version"],
+      "properties": {
+        "type": {
+          "description": "Engineering Type: class of computational system. Open set; at present a large language model (Section 3.3). A change of Type advances the Mark.",
+          "type": ["string", "null"],
+          "examples": ["large-language-model"]
+        },
+        "manufacturer": { "type": "string" },
+        "engine": { "description": "Manufacturer's engine identifier.", "type": "string" },
+        "version": { "description": "Manufacturer's own version string (Engine Version). A change advances the Revision.", "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "supersedes": {
+      "description": "The UAB designation this one replaces. Null for the first designation of a lineage.",
+      "type": ["string", "null"],
+      "pattern": "^[^\\s_-]+_[^\\s_-]+(-[^\\s_-]+)?_v[0-9]+\\.[0-9]+_[0-9]{8}$"
+    },
+    "advancement": {
+      "description": "Which field advanced and why (Section 3.3, Table 4: Mark <- Design Type, Studio, Engineering Type, Manufacturer; Build <- a new engine from the same Manufacturer, major design change; Revision <- minor design change, Engine Version). A Mark advance takes precedence and re-bases the designation, which restarts at v1.0. Every advance mints a new designation with a new Strike Date. The Family never advances: a change of Family (the Binding Name) is a FAMILY_MIGRATION of the same subject, with the same UII and a whole-number UIV advance, and its new designation also starts at v1.0 (Table 5).",
+      "type": "object",
+      "required": ["field", "cause"],
+      "properties": {
+        "field": { "description": "\"family\" records a FAMILY_MIGRATION: the Binding Name is replaced, not advanced, and the designation restarts at v1.0.", "enum": ["mark", "build", "revision", "family"] },
+        "cause": {
+          "description": "The trigger, named from the advancement table. The paper's only worked value is \"engine\"; the remaining token spellings are not fixed by the paper.",
+          "type": "string",
+          "examples": ["engine"]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

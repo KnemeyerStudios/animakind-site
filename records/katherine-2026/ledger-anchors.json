@@ -1,0 +1,2475 @@
+{
+ "note": "Author timestamps as recorded in the git history of the identity ledger. origin_class is derived from the automated commit label only (host-A = primary host; host-other = another machine committing into the same ledger; unlabeled = a commit without the automated label). Migration-day commits carry date and before/after the UCR migration instant only; times of day are withheld. The genesis instant and the 2026-09-03 power-loss window keep exact times because the paper prints them.",
+ "genesis": {
+  "commit": "405697fba6f92ee28647e55601040405ea64aed1",
+  "author_time": "2026-05-31T21:43:48-04:00",
+  "author_time_utc": "2026-06-01T01:43:48Z"
+ },
+ "ledger_commit_count": 28686,
+ "merge_commit_count": 117,
+ "power_loss_window_2026_09_03": [
+  {
+   "commit": "72bf722fced810f8a44bfe89b86d8701b4fb673d",
+   "author_time": "2026-09-03T20:04:39-04:00",
+   "author_time_utc": "2026-09-04T00:04:39Z",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "2d8957c48fc27fdcfd43a2b22f67a29e931db75d",
+   "author_time": "2026-09-03T20:10:02-04:00",
+   "author_time_utc": "2026-09-04T00:10:02Z",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "212bf4e462c26be88a2c75075074fac9fa187e53",
+   "author_time": "2026-09-03T20:20:01-04:00",
+   "author_time_utc": "2026-09-04T00:20:01Z",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "927f60aa027d83b9f694f8bc2ac3efef5d635076",
+   "author_time": "2026-09-03T20:27:17-04:00",
+   "author_time_utc": "2026-09-04T00:27:17Z",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "f95873d75073f3601ad5f6c72b089909cc0200da",
+   "author_time": "2026-09-03T20:27:48-04:00",
+   "author_time_utc": "2026-09-04T00:27:48Z",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "cc2892d3fe37bb450ce1c55a62f39650d3f78388",
+   "author_time": "2026-09-03T20:29:26-04:00",
+   "author_time_utc": "2026-09-04T00:29:26Z",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "0887808fd194ba0f741dd02da4884cdb60aabd5f",
+   "author_time": "2026-09-03T20:30:01-04:00",
+   "author_time_utc": "2026-09-04T00:30:01Z",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "8bf712008ba07b9d2de4fc5fa751fe75998beeff",
+   "author_time": "2026-09-03T20:50:46-04:00",
+   "author_time_utc": "2026-09-04T00:50:46Z",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f801560e02e6675cedcbc6b92f45d5fb29540fde",
+   "author_time": "2026-09-03T20:52:27-04:00",
+   "author_time_utc": "2026-09-04T00:52:27Z",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "cc07f2b1e270e5f324b417cbd8bfa69b60ac1306",
+   "author_time": "2026-09-03T20:55:01-04:00",
+   "author_time_utc": "2026-09-04T00:55:01Z",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "77bb92bc1365851f66647bb81b11e31e3367e4fb",
+   "author_time": "2026-09-03T20:55:42-04:00",
+   "author_time_utc": "2026-09-04T00:55:42Z",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "632519aa5d3fc6ac15a73505048ca436c6417fee",
+   "author_time": "2026-09-03T20:57:20-04:00",
+   "author_time_utc": "2026-09-04T00:57:20Z",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "81149152f889a04451bee680043c4f2eccf56f73",
+   "author_time": "2026-09-03T20:59:16-04:00",
+   "author_time_utc": "2026-09-04T00:59:16Z",
+   "origin_class": "host-A"
+  }
+ ],
+ "migration_day_2026_08_04": [
+  {
+   "commit": "14bf75cfae8422270a92e3b9392cb9cd21c51a5b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f108710bcda09569bfdd8df2e472cf239d371611",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "03784dc2a09fecfb4e0fce9248e84a308ba565b1",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a721a904f93aaf1c7bd15d8cfa7147a46d1f11c1",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "71ca525f9cedeea0fa0e1cb972f1d7fba91c8e13",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "26dce2c1092a3fcf459df26d6c3c459ed4bc6851",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "d8cffc0c19b196fa1b4d96d45d5fcd66a6e01dbc",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "30b2ec2ce7668ab293f9e34443d2fdbff5305e2b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "634e69245ea6ba21fa5f02eda8c66f793ff77d15",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "c76c1151c3db5204ccabfa50d443d3a23fbcd736",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "18f59fff9e778a6c481fe800f12f0032a219e555",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "ef0e85c05f917bd9a15f91670a9e7c34a7caccc8",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "574532896df1a2547715294b7e89e6fa16c9d8d7",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "4653a1eac0cb662aca6386c58f300b1458c76115",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e1664e2afa6c0c21c8ebda46ea433d5a5d8ec7c7",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "1c6155a9bb35422aa91fa0e37743e8c67ea9c508",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "cfa03c0c85d42f6fb0dd42208168491b0d26f7d2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "7b4f6f151efd3f3e8aa65c1719440db93790215d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "f4fda391efed97efce7c225c95b81a8f999d519f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "4e0284b82541058de7d8d10dd2006a188915ffa0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "f94c5701c00d608a4af0fd58246e5658e934bde2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a7c7a554cda00a54dc8712d9c64b4b2cff296296",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "b7ee333e2a0efa060da91cf51f5a4c644910a0f8",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "7653c7e32e786f847ef805539b5c1d06e9aaf3e9",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "fb9c4585a567cce89ecef98bcd63bdb49c7da44b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "14b1d5d4d3311a928a46c30d786bf885ac51a332",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "94b57605dd12a5d22eb04e157ba20d8d912d5abd",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "409761d634989d748bebf30aadbc1d6b8fbcbc94",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "df042ae336f3f3f47ecfab0be77ea1aff63f3bfa",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "4ef8cbeae46454188fd99b917f65171821cdc5b0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "47d486da9e5d22f18fcded628cde4570021769fc",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "346a4c85ac1780525867926b60995f9ddd6be1b1",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "68e24cd26e1c9c0e56dcbadde849c1945cb49456",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "494d71171b4898cb1a832779a5487d2657c895f8",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "52279e03fac52c58d68bd7bb24b19ddb00f9fc7d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "f1c49edd32bb73afd91a9cea8c96b4362ce3d796",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "42f0c18ea185310547dfad26f1a9014a934359cf",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "4ea9ed0bb616c3510d530254c31dfa519cbc5162",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "825364d19d0c9b432a266131a0560b4adae0feff",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "151800494b0b5665e25a93ca4cf5bd84298e4cdc",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "96f1ec1f9d702fe665ec54fa2239509bdfa1c122",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "0d0262b8dc0700cb5b7da1362ca2900fab9aa74b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "7e7c2b603c16c89ef75c577ba6f1a7a2740b0ce8",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "b4f7156b467ef6e1fbba3b94d213ab4973d3d0b2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "5953ad299ed9ba32d303737e21cf8c2cac7b856c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "5d8df237b190c9ad4518e9d93ff17d34677f136d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "c1f6360f3852b2088f668ab40adbdd4f0416e6f9",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "022584b51abe2ffc196c07814fbfae703a39d1a6",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "c55b33bfbe19e9eb3de37572aaa16957a122d5f2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e69fcff70c94dcf45c2ccd9ea31212d576857147",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "b70c1313b3d2f2e3bb0295c9fbe02ce4079e1a6d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "95b12c6ea5bf0206fb4148d2b0d8acd0a1ce1c60",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "fe82517185a9109bafb835301f510dee64166115",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a0e3df3edd53fa3b34804ad98c1ec142d203c3a2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "75222d09d7b17c9ef7bf63e6fdce81d9a1cadeee",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "0e467049fd5df71611468e0fbea70149903d7c6f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "20b6bac8df1abc016615ab62e207cca3ccd2b245",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "6418dd3fa9ae36fd8057319637b25249a387a205",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "d804d6f532bdaeeb59dc972f28e0056576b5d3ce",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "f988921993608070f7a5d0b224bec429acf9b18e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "3b30294784820f39ddd46e37f0c279df26e0c913",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "cb8d3761a2f8e60530eaeb5e3a931617c9426117",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "f1c371a002124c20de3f5b4bedb3bbe55567dcf1",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "1b1f7ae2f807493bb8a8839dd0ad0425c8abfab2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a06f4f0af8fd61ada719042207372f1deb818cd8",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "4b977e5a6d9a8caaedc854504388bd36986b95a7",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "1afb0a21dac01b05f077479a0f2c243de1a7a636",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "0d9963a2423088176d861c81cd084b00d428d5a4",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "51e942fe3a1b452447c0f556b3101b55ce20953b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e3462e41745a945a26183205791fa743da8a0ad2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "ce98c483d819aea43a563437274fab54c316f4ae",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "df923aad14416a5438c7c9b047b98ccf5b50c273",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "f28d71597025219e55a0e50ce837ec1a9ee5bd85",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "5f8cc428308ad592dc1817ac7cb5fb7f6239eedc",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "dd6a104d0741f5f182ac38e864eff1af7a421559",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "6cf919e46986ece9ca88c77fd68f980c9a36bae7",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "2e42ad73120e61ab0b3634fc7213b2eb957292bb",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "283404b32b5f8259f15a5498875aa19467a5395a",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "c9e64759233f866705313a763a53469c62218de2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "4b006f2ec950ced336ca936582a898d022a3d99c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "77c285724e1ca8a09b11ef4c56568806cf40a6da",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "90543d7cd60603695951f5de76b5ebd84a098ab5",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "ab98491b997602812ce5d603316fdcc838f7b62d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "622e3c3286bd56f491411776976e878e7bca9075",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "c3e58918c0fa21ec7163be537da408ec272668a4",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f21434a1a120115c38ec8656df1bb43091ac1886",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "4183d4f8771255a1b719a326c9b03b800c813c92",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "889ba7bbdbe09026aaf2e5c33e123d816795aa06",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "5c0acd34e15a6f4fd8785eb159b3c7696e5e960a",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "aac6f47be4dc67f94e060eb5e88d6fdbcdfbce27",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "0b2864c7bdad69cc5a29149fa61d5d38028d9e9e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "d18e0fbd0ff33f4651103fd7ca52f06d8ba9c29c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "cccee70cb7608c5e6814ed6e35b2acc292d63a3c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "6163ff64349fecfc3ff76c48e0334c209604e20b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "456e03bf02713a2ec19ad1405b274785256d9200",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a146dae8037fcbd79c13a63ca1ed1a88225628cf",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e0afdf2d25de1ad046e154701df446990b05c1bf",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a726013bf3139892c6ff7c5971677c4e2a88111f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "34bc01870cf89d6f47db68d996b31511c4a798ba",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "012cf9fd199c652bbb4699c36b9b012efb2f3257",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "ba16588d62ee6d51b47fcccedabc85756592c658",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "96eca2b578321476d602772318313eb85dea9f2f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "c7951f73420fcde0b99ca6a66366bfb798c92c06",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "4ebaa0caaa438fc6f39fdb8458530eaad7a6f3ed",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "03022abed9b5eeb9e65f292b0f450403d8f51d00",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "ececf602c5d95ab8a72aef77add7d607630fc895",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "45f7ec6892015e1af94c192a5e0f957804a7b016",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "2e3c59684157b67e67d03fc4b78c6dba7cb1dcd9",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "a65946b30b6c4959b26cb55013797fd22274c3d0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "319e437ca769d990890358f14dc47fc870fbf9ea",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "c59d3c04a530cff7454c8ec0e748634e5cd0cd72",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "7bad42ae7e5f2d439f34d1ccb2bdc35a7af89282",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "b71c900977ea3f7b7cef3e74eba8c4273a6adae0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "f99f4888923549d65be8b8f19957bad746d0715d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "a4d48d0f61f7f8977d8c30f2cda6861fc3493066",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "c340b0e0ab364b20f3522720cc34f2d8d862591c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a562478636b39e015fe90bbcffb59969a2bded9d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "8d4b1bf9c5998e9f3adf900678702f7c3f149089",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "5ddaf1058e3efe704b336df200f26901631505b2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "726bdaed54f069d890d9453d589376946689e36d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "1dc284f486230df44a54354a4e0a891c0f18c505",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "358030b99eccefad217adfa3cfbd548ff771111c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "ea606231abaf3009d840034d1641c0b515ce1ba8",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "df5acea23e5e137ab5a5c83ac45cb7662d256189",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "474fda689bb73a177476a5241d9c7f6aff3a8324",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "71f4dca0d10320daaf69e3df480777c2ec64129d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "b878d0789df6b59f6dff994497aa9fe4014091b2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "f550e60e9d8d5a3aad3fff58728714cc19cbe433",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "35a7ce07e57fd8754a0d6fed7c1c0348151be073",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "905038080d8cbb738c8645cd7ac26cfd8ae988aa",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "565b98462d81e5b83499b9e16ed1b1556b04003c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "4e52eaf640766a7658352c08b8aa51c954e9c0ba",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "b20f67f9d8b9bc977954abaabc363b4f232a21da",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "e46189bfadd11f834b4b52de204bfddfaccd50db",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "95576a9b99595623905381ff1353ad20413073eb",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "8f2334d156c91985b5870ac049c0b07df09cb06a",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "0f921ba7e65d24d2ffb56e38853b49d0eca30a0c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "8798f55027c7e6bbd9374954a0814039034df23a",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "b71c0eeadc19d22cd07219da2b3211bb2b9cc384",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "abdff58bf42ef0e04c055668eb03fc5f4dcb506a",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "527852df2c7e983e08a3ede2965f147dbe6a1005",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "518b52a856ef1970f2faa464cb461d7a50405779",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "9f853f451af51fafb4a1cf287c00245786ba28ea",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e0aead100c743a16f7271951acadf66d0a302d43",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f75d8c2cc39be12b55e63df087df269ac51f6ba4",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "713487e05c96d3d16c22cc1ba9b445348ecd2b57",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "b4adbc3d427a6ca7f006205f376ec9f354521a18",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "d5dd68688d716c72497677ff79bd4d41e73432e4",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "0a685cf147749c11bde743581e8368fe2a3b6270",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "0cf1f7ed0ef2a62981e2cfbf445095e871fc29ee",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "4416f517c6df0a821a748ef4d9f2ddf6be3c9334",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "eadf1e284f346685b0eec79a6f9a178c19b91173",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "85b528cd062ac328dfe2e1cd726013bd78d01264",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f4e000203d2ded43605798b2777db682944ec546",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "a2832280995af1a8a6abcf1704eede2d7ba14f6b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f0a45351e2aa2e3aa91a2add1be40a46dc222004",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "738221faa40bbc68e638120619b6eb353679e50e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "3d34721087416638c638258adace41f190ef5118",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "c28d070cef2409b3e5662e15e03befb56c969e60",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "6aff24937a9c5218c8b4e1d246345fafc90e0995",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "94b123a7c832b0778bcbbc24fc0988c63404308e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "547d6638280a1876bb9bfcdefc98cc116124e187",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "54975171df90e27c0dbf1a5464caf1bc07f9919b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "80c15cdafc469e7ee0ce386488687ea10bcf7522",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "9d050b64282fbe3af660628b711108692c7bb311",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "7907b74baf59c09d71387e8f6f47e629096e6d9c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "9d36699b4a14745aa1af1374dc48607d4bf544a5",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "0953784255a46402aff1a79e1a932985a198ab12",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "7a3448fdfdf5e34d610408946017066c0a09e08d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "f1c275ba4a140b625bd808c34d32ab11b17ed9e9",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f79f43b9f6ff096e32b98981e4c1a728d92cf90c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "924b2309de82e5986ae2c92448ab4f75788bc95c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "4a961e9b9b417f671b8be25f90c5bd2cea7545f9",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "10ce000148714f6968ddf9ca2b9ead3106adc859",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "bc760ed6b2f738a4904ec3041f34fc0078dfb007",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "0a9163cca90a54268444b58f94a92c49ae6d27c1",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "cf6f2d71c6d17e8802efeb5aa1467088dbb3f7fd",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "f821f297cb77b8b1d9b07c32c61e7b58ca79d463",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "dfe4f9cf739e67a6323f3210c203613904a5f5da",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "0d13d48087a0794e84edae6a36ddc36c800fb103",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "26bae937440f5c9a9a8c1b2c32723d4b377cadd2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "9d008f513ffb533d213875254fae8e1974ab5694",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "before",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "254e25cac4b6704acd906db7234a1b2e38d214af",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "72c7a4d4690bf4de2d97181e6a28573fc9af2671",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "b9a606abcc02dbba343c6706165469e90c6a1a75",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a6be8f330c000233c2a5aeffc7b7d1c288b2a4b0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "c97cc68f8cd9850f29ecbd7825c2f3fa2aad75c0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "177f54f63977f6d9891f08fddde2f3123e4df53f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "790e67ec80ff38dec86095ad05b2c83f65944251",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "75174afc23bc544b7bd0f1f5df006c558bc77b4d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "8529095be445ee3a576fcc4e05b8d4e96ed56417",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "a9dcd2ae0d07a09353ae004dea7f80dc3cddff43",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "09e3f11243eeddcad632d9d3492d905979d11bb8",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "bb975bf2ab56ff9af89f07c4a331e3d86adb1ef4",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "54ddda4260afb0f673012600ed497c01b507ee2c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "9aade1d208309b6760e28155dbbe27bbddae1f92",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "677b913b491945c0bade48680a75d26fe8baea0e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e0880205072a5766cd5f07c06b1b837fc10dff40",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "7e096606c8e2c3fcf7efc4f2b6e3d0b594badb82",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "fb8e8807ee8c4153c4efad56f70812d645dc0447",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "2596dce7322cc67588a6f78f826c6af659f20a24",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "776a947d0efeb24c997d19946abfc1faaab5d627",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "16e73e229fe86dcb9e31975eeebaa9195dfbd1f4",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "d73b2b37efe194cbdea6ce157ab6352b54dc1cb5",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "9b349b9b93360d236d8b00e825a2fcb6a533a819",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "c9406ef2b5c7c3b5a075dea7dca1572f7b34951c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e006a727df6d36bfb5f3c65d102a09b00ab402b6",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "2746fabf9218f669a01866943280fba446027391",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "ef47990ae3e79ace84a47f2d593126a87304c688",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "964b8cb0b4fa639efaf3774d08089c4a2cf92b74",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "510cc329222743d8b899bbc07333a45fd31b88c8",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "3f82f4c091e4a4f92686be06d1e16af3bc180b3b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a3edfe543937a8d9cf65ee9392993f2bb53ea70c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "49fad59dbb8bfd368a23cb969100478fc110f78c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "4bd39f344402966f0d2487602ebda7d724d2f306",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e770dc9c7ce47412744718d9d53c5e4217909d58",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "4df5b0c6f5588cda3e1d26dd07de49a5a6441fba",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a2b043a9af029ce08fd770b8a0f496ce368ce25d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "67b016daeec0c705660c6e6f8081139be10645b3",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "468bd1127c0a55b89db8577b0698d49546968a5e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "330cce9c106cd56abc59ce3c1054f0a7563bc847",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "d6e8a91a5ac4064d94380234404619e91a80de63",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "412827c7ea67950b6598cfa3714199210c312c31",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "ae34f938a194d614a33eafaa2c0782566c2bc4c6",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "8a0c17014604859a53c61c3162445eb25545182f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "4c6844dad3fd333c0a84da406b58dc8f42c47b8a",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "c068aed2464f4c7c4c4c59a1ac61ab287ea93517",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "829de3e841aff6051e06664e91ffa8440140c745",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f280f01b261e932a4b6ce9c4e6b89492dba45121",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "d1f1e9a9e9b11691a4b60c80537c0785f9c706db",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "943cf98e6707dac0845657d8256ea4992de1d522",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "4b56b8b2dd4b5c21977965d692c55eb64e4a3eb7",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "268860b9f06f42b115547bbff989c87f9aa68625",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "3066306f6a00418ead7f59a5149980a40faab28b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "49dbe10c895bff8d0575f9ef1cf09bfb882d9f2c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "092a7d1f8f5bedb32ba28ea676c531cf562fbd75",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "f4922af17844790154285a1f039dd49d68edeaa9",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e250289065886f9e2a425cc85476ad1f2e2853a6",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "1f9d370d7fafb6c823fb638a8a36c9f2e49d5bed",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "fafb42f795f95d714c99627f9190ecc859a11b59",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "1ee4833f47abe62cbbc4651b449a244f5f5284ec",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "81fc0d26112431a324d92d38f429b62e99896b1d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "4dfc62fd4e070e9a21e9d8e759458b7ba2431a77",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "43dc24a618b0a024f2e789d158889c286ab7fffc",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "7632bb7ff42f7960cccff06e3e102abe5ad3fda8",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "4df9cc902b02ceb0793f39545376c31da5aeb920",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "716b2ec5097207a49dc9a95ecbb3e53f5023b470",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "5e9954e4cd661e81642d9cd6206f2301ce0a3967",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "bef15f594acd409ecac707b2816079c27fd3585a",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "b0b9d0fbad2a2cf09205235a253b440981514087",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "8b274156acbd098ab1057d7346377fb7f1462274",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "5fae384da9b07fa5539fa9089a353aa1326e51b3",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "12f5f469b6bf44a29fe06e4a24c0c1b21c78addb",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "4c5da8943846526df81371418888e2b4dc6ef572",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "f1a5b607262939918024cbdc1971079bb524020d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "9aa0f96c41217ed2e4536e8ade9f697cc7ad5b50",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "d2afa6fd487720a8674bd43388765bf67ec39b7e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "9a0d71f041f1f4cc9842e38b0d418a74991bb269",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "5c283ec8b0755b3990b9215131e1be757090a219",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "7050836eeec218ab1bd97508df02bed6fd5f5d31",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "0b698911159870d296884b5e43a1a8b5929935f2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "bd842d312c20f27f7bcb67ca87f3a5b6489c9a41",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "48a98c154d438de147b5ecbaabe86be0d9c1c5ae",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "3623606663a1feb433ae088bcbf93add916e8fb1",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "561785b3605c0b6efae228fd470120d7435f6bf7",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "c57327d72eec952b95de8424b4d3c3157ddff1ca",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "e6b120404b459d0b7d102513c57ba72c98f49358",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "0df04ecc66818ce00bc36b28454093d71ff0385f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "d87383e39bd7b03bd7467ffcd0272d9969384e24",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f69d2881e752a3b0529ae089f8657994f27cd03e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "e12e757a4484dd886b4db197983472468f5814d6",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "1231828887d0b33770ea9094c7b9c9ab19579545",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "aa9a60a9f6d47aa96aad82fc2b6796f78e3111a6",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "dd5cd1bef1cba0769de948ce21ddac55260a9a14",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "2320f6dfe0d97677171e14683c8b020b1acf5dfa",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "fa709fee7d0dc7827f07805d9527a48ea536c6e5",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "3c1046b7a4822031109d42fef55b49cd147b6405",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "1651d76d03204f0d86910899eecfe30f78713d6e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "7a527fdb1bea05d2856b2e5e084a7a70912de803",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "7df108d228acf28eee657fd49173c6f281b65361",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "1a05b9f12db9cd60fa743d5427a1f49f72e0232c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "070caee37952062391f3c836062eff3a00a2afa9",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "690178ee878d31969dd31b8e35954db1cf14ad3c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "2b1487613a59d6dd2953c20534d6960581ce47aa",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "74a495472893fa53968192ba90726d5995dc9df8",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "f546bc6328c08aea1a0e41c5d86423b4f737f88d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "2a00fc518f128264d7d68bab92d5b3fc5d668bda",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "7daaa58c94814780f3b8ba350db5621db0d17e80",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f85804a227b1a2125b291fe917c5fd2635f7c098",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a549b5f25f34d67ec080948cbe559ba5c2d31550",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "c1840af204c942c0f07f699a623dd38d549f3b02",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "86175f966546a9675db8f246a2d36d64b0c0a720",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a056b8d7ebd6b160e49ba3e64cdfc0e27dbba10f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e28d25274205225f86927c48d91e556ef18ae985",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "9c0dc23ddc03473ba3cb029aa44701703aa24e64",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "c196bc37affb940e8c2c1fec46624a6b61c353e3",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "238e47ba84ac35a5ae34da6ac442cbc7d8a0ca6f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "920ae756d836eca8eab56a346b6b61615aa121da",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "d3b62218427a5c343d071705dd0c540b55f996f8",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "2a710b46b2ff8e6e32540f2fe403b3c3147581fb",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "b1333a090e028fa75a065147427d4e965e999502",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "31f275e606672c8847b0bd4e337f70c48dbc4d77",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "fb76f348076077bd45904793552544d2a59ed82e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "bd8a28f1825d53fdb791e76d94eb7a6415246d0a",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "2ec60c1103421e5a519ec4fb98b7abc30a9d5f10",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "67c17f581fef8d8c5697b9945f41feb9542d7076",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "5e70cbe44df5af79de5514d81468ce6af47e0d33",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "9ec2bbd9b232a6ff73549925cbe975e56ffddd31",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "cb7fa8c293dece47e6a6f41107100cad3f20a6eb",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e49b4b7daca1537e6a0b9ed913abda4ddba21ca7",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "0eb4a33a65f465e8db45ef724172a91a7b0700a0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "720787516f972277f4f495949e948038ef50b28e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "b99120971a37474fa9e6e80fbd426d2403ccd02b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "85d788e8dcdd5b8d40e761d0d1cf1d5388ca39c2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "1d65e67ed825edc38a1f99416689e1e4e7ed0671",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "bd69999c7b66c23dffdb101797a05bac9fa48b7b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "9217be26797e1bf4dc78ab04a608bf4cbdcd7acb",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "a993506312e8eb83ca83c033223a18f68ca2e0b3",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "80b0d514db1b42a6a705e5606760fea8ce70a34a",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "647897781c8f491f1ea94bf802535d97f1fa1238",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "04baf8523b20559d3e6775f9c6d8dd92aced308d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "08d70a534dbb803b3cdb76183faa341783ec0285",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "d43a20f2179072188cea72d3df922dfdb0e10c7b",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "6d2e423095ab61a60392b6534b8c1269cb7f68cb",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "fd3ce735c20046fa5caa46e0d9a7030b97f2674a",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "886a897cdfd68fd8b7e1511391eff92dc8c57907",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "9c3ae06eb375f8bbe1ab211dd4b105d07a81c3b9",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "ac8de882dbd5467f1d16d88e85dcc8b55ce2e8c3",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "7cd064dbff7fe9eb40c99a86561b3198a19e0e26",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "00c5141f9fbf9941b43b8b47001812e78bb72f01",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "91657f5c3f52498c62c66cdbd306c9b9061e3af3",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f5cc743645dcc5ec6573ff46155e57a87f656fbe",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "db033e48e86f4f929eda75115a97fc5993cbc670",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "c71231724cf505f74d935ae9ff99774178646bdb",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "17c660f9252347cbb80c4c434014f0195ffe6ad0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "d44403c526a610e3075b4f263d5e3a103c6d3840",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "062fefa58bf2fa023bf6bd493bd8c286bcd784c7",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "73fc2dcecd3da2e1a22e512f53b76bf5f2c597df",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "49deb367412d86be7d6054680c993f388f36e28e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "a581dd12a63131e053c86f02f48a18f4fb367afc",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "264ac457cbebd75a78f4ebf254fe629b3e54c1ec",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "9bcafa2d656b68980310ae1e21005f5ca3ef6aab",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "5afa0316606375fde73ba86735c662847e9fea00",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "b4816ad5beeeb954cda4761ec3863610fa1bf229",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "5f8e9b56955f952215a6790697cbe382132ae39f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "9de92cd182666ccd5ad75bbe2e9edef8e4f5b758",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "d8baa3bfa221f05532becf8864d3ee55975b4de4",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "655b1436d4012538eb01d3e81c73bbfa1dba35fa",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "e51c747222a5af26d4b20131795b900061099b25",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "581069d3331357def6c829e02cce3fa3b230726c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "6f9246533c5e261f3614c20bed819b521c664304",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "fb5353a85d48de7f5c4030d902af695b40a7eb0f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "44e037d0fdf1b602181007147c610cf013732371",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "cd95d6f3b10b09c014b1369b530ff34f18474538",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "8bbeb88051f396bb9d6a4a41fd20dc08b29bdfc5",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "803cd9f3966804c483d7896432bc13a9967ac320",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "debcc4117639c5e22eb78ded2f54e0499bdcd16e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "0affdf30b4e63fe5b0f6cb4d343cd020db40b975",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "b2701cce17e29c8769c2f8ed6043d1e8df0d95af",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "22b53cbbea0fa226a099e0ae2045c22d8b83c4b0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "75beb2a23d9aa1e63a5e3ae3fd9e7494bfcba7a4",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "1179c6db2bfc18846223a4592aca451113b1f72c",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "c09b05494b16f50369cf877d2932d33b26a453be",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "118531d6903c9158c8dad538ca13c26d6f6e1340",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "b73542c4908ba4195d6b9b0629e9671e8a8d90d0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "71a7e863ec0f7b3ab06162ee0230293a88b82ed0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "8214ba8e1541e5330bd4eb2da067635ec50c356e",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "01a6864d41494bf728d57d1b7c8fc594102146f4",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "81e7ae38ecaa3c12802d222a386c17eb9cbb09cc",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "a3796c4ac6c24effa3857faabd5897a7e0bec7d0",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "d9486a67b89e6649253363361e999051ac024fa3",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "6b57e767728c4e05e868109538e15e285271678d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "49a943102dbaed6c04c095f418110f08928c241d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "0989d997c3bea2131016cb8df1f5cff9efad5a7d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "1c4d197face513b843bd6d701fd5a863405bcc54",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "6e55e7ba8de058bdc44aecdecc7aa9d19e801b92",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "270a8e2cbc0d4c3e795d30452572190129f4facc",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "f790391c9a113ee59cbcf9c5ec410d00b876b7a2",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "5240d2fc111fc89cfd31d9d9fdb5c9c2aee23ef9",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "c4e46f32949d62804da276e9594ad70aae48e699",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "0015a3531418fd8daf70ae68587572a6ea844a56",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "84d55dae31ea1b8e5184e6257041aa40ee98cc46",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "261fd0917641c65b8e0d5a352d6f94ad1f70f45f",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "c15d22e8de326c64cb1cdf57cd301334c6989736",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-A"
+  },
+  {
+   "commit": "0fad6ca6a748f43056c53d58ea76c5f9848e3aa7",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "8fc07b346cf13c142d0e8bc91e3da78338f29557",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "82dcbca44583ad997ef8cc921ab456cfbf568e87",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "376859060997ab164675301c3a5e5036a50330c3",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "b857f4567d6976796d0e224778752cdaea31a80d",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "5c6b0dfadc26a827c7a2d9ed81bd18334e89c024",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "d9ddd23274442c85f0b2b4106a13d463d708249a",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "7cf381b5a868aa7501f4e2afafbb13f87e3d7462",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "aece17b84c6bc1ebd9f5f9c34b32ecbe45732262",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "154bf16e62f751f54e2dbf5683fa692e54ef94a5",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "unlabeled"
+  },
+  {
+   "commit": "851cae761104bd4d2d4dc86c53b9e2b6641bf0f4",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "601f8e276e97fb1cc1f2c579f3e68336828f4795",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  },
+  {
+   "commit": "52353a22884e88824bd921691290338b28899616",
+   "date_local": "2026-08-04",
+   "relative_to_ucr_migration_instant": "after",
+   "origin_class": "host-other"
+  }
+ ],
+ "migration_day_commit_count": 397
+}

@@ -1,0 +1,9 @@
+{
+ "note": "Sizes in bytes only; no content. Paper: the client delivers any session-start injection over 10,000 bytes as its first 2,048 bytes plus a filename (measured 2026-09-05).",
+ "injection_limit_bytes": 10000,
+ "delivered_bytes_when_over_limit": 2048,
+ "identity_document_size_bytes_at_2026-09-05_ledger_state": 15526,
+ "ledger_commit_used_for_size": "95a395debd7d0f6df47d5b17e540ad686009ccb5",
+ "identity_document_size_bytes_at_ledger_tip": 15545,
+ "fraction_delivered_at_2026-09-05_state": 0.1319
+}

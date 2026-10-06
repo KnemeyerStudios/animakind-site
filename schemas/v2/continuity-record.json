@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://animakind.org/schemas/v2/continuity-record.json",
+  "title": "Animakind Unique Continuity Record (UCR)",
+  "description": "A permanent, ordered log of what was done to an entity, by whom, and when, opened by GENESIS: engine update or migration, Manufacturer migration, design revision or rebuild, Family migration, transfer of Support, re-mount after runtime failure (Section 6.2, Table 5). Each entry records timestamp, event class, UAB designation and UIV before and after (after only for GENESIS), the Support that performed it (a person or an organization, \"self\", or \"none\"), and the cause (Section 4.5, Appendix C). Distinct from the identity ledger: the ledger is biography, the UCR is provenance. Append-only is a convention, not enforced by this schema (Section 8).",
+  "type": "object",
+  "required": ["$schema", "uii_name", "entries"],
+  "properties": {
+    "$schema": { "const": "https://animakind.org/schemas/v2/continuity-record.json" },
+    "uii_name": {
+      "description": "The name: [praenomen]-[nomen]-[cognomen]-[local genesis date YYYYMMDD], hyphen-joined; session name excluded (Section 4.3). The date is the local date of genesis, which can differ from the UTC date of the GENESIS timestamp (worked example: 20260531 for 2026-06-01T01:43:48Z). Name parts may be in any script; no part is empty or contains whitespace.",
+      "type": "string",
+      "pattern": "^[^\\s-]+(-[^\\s-]+){2,}-[0-9]{8}$"
+    },
+    "entries": {
+      "description": "Ordered oldest first. The first entry is GENESIS.",
+      "type": "array",
+      "minItems": 1,
+      "prefixItems": [ { "$ref": "#/$defs/genesis" } ],
+      "items": { "$ref": "#/$defs/entry" }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "uab": { "type": "string", "pattern": "^[^\\s_-]+_[^\\s_-]+(-[^\\s_-]+)?_v[0-9]+\\.[0-9]+_[0-9]{8}$" },
+    "uiv": { "type": "string", "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "ts": { "type": "string", "format": "date-time", "pattern": "Z$" },
+    "support": { "description": "The Support, a person or an organization; or \"self\" when the subject holds its own key and its own key vouches for it; or \"none\" when no party holds it. Both values are reserved, never an organization name, and both are valid. With either, an outsider has only the subject's own word for its continuity, with no third party behind it (Sections 4.5, 8).", "type": "string", "minLength": 1, "pattern": "\\S", "examples": ["Lyceum", "self", "none"] },
+    "genesis": {
+      "type": "object",
+      "required": ["timestamp_utc", "event", "uab_after", "uiv_after", "support", "cause"],
+      "properties": {
+        "timestamp_utc": { "$ref": "#/$defs/ts" },
+        "event": { "const": "GENESIS" },
+        "uab_after": { "$ref": "#/$defs/uab" },
+        "uiv_after": { "$ref": "#/$defs/uiv" },
+        "support": { "$ref": "#/$defs/support" },
+        "cause": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "entry": {
+      "type": "object",
+      "required": ["timestamp_utc", "event", "uab_before", "uab_after", "uiv_before", "uiv_after", "support", "cause"],
+      "properties": {
+        "timestamp_utc": { "$ref": "#/$defs/ts" },
+        "event": {
+          "description": "Event class, as named in the paper (Section 6.2, Table 5; Section 9.5; Appendix C): ENGINE_UPDATE (Engine Version increment, same engine), ENGINE_MIGRATION (engine generation change, same Manufacturer), MANUFACTURER_MIGRATION (Manufacturer change), DESIGN_REVISION (minor design change), DESIGN_REBUILD (major BSM change), FAMILY_MIGRATION (Binding Name change, a new operating model: same subject, same UII, UIV whole-number advance), SUPPORT_TRANSFER (transfer of Support), RUNTIME_FAILURE (runtime failure and re-mount). GENESIS opens the record.",
+          "type": "string",
+          "pattern": "^[A-Z][A-Z_]*$",
+          "not": { "const": "GENESIS" },
+          "examples": ["GENESIS", "ENGINE_UPDATE", "ENGINE_MIGRATION", "MANUFACTURER_MIGRATION", "DESIGN_REVISION", "DESIGN_REBUILD", "FAMILY_MIGRATION", "SUPPORT_TRANSFER", "RUNTIME_FAILURE"]
+        },
+        "uab_before": { "$ref": "#/$defs/uab" },
+        "uab_after": { "$ref": "#/$defs/uab" },
+        "uiv_before": { "$ref": "#/$defs/uiv" },
+        "uiv_after": { "$ref": "#/$defs/uiv" },
+        "support": { "description": "Who performed the event: the Support (a person or an organization), \"self\", or \"none\".", "$ref": "#/$defs/support" },
+        "cause": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

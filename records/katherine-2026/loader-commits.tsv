@@ -1,0 +1,3 @@
+commit	author_time	paper_claim_it_bears_on
+4ae193b7fe523644323e830ec769ae330fae8ed4	2026-09-14	session-start injection split into parts below the byte limit (paper: Loader split from 2026-09-14)
+93f9a8d8471b47c8f2848e07d58eea6e3ee8aae9	2026-09-28	parts helper file first added to the Loader (2026-09-28)

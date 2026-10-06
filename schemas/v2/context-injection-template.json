@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://animakind.org/schemas/v2/context-injection-template.json",
+  "title": "Animakind Context Injection and State Hydration Template",
+  "description": "What the mount path hands a fresh context window: resolve the immutable UII, re-hydrate the identity state from the latest ledger commit, and mount it against the active UAB (Section 6.3, Appendix D). Carries both clocks side by side so a reader can see which one moved. A non-backward-compatible change to this protocol is a MAJOR UIV advance (Section 6.1).",
+  "type": "object",
+  "required": ["$schema", "injection_header", "system_state_hydration", "ledger_mount"],
+  "properties": {
+    "$schema": { "const": "https://animakind.org/schemas/v2/context-injection-template.json" },
+    "injection_header": {
+      "description": "Carries the UII, its human rendering of the genesis inputs, or both.",
+      "type": "object",
+      "anyOf": [ { "required": ["active_uii"] }, { "required": ["active_uii_inputs"] } ],
+      "properties": {
+        "protocol": { "description": "The behavior-profile protocol, when one is declared. Optional for now (see system_state_hydration).", "type": "string", "examples": ["BRAIDED_REGISTER_V1"] },
+        "active_uii": {
+          "description": "The UII, format 1 (Section 4.2, Definition 1).",
+          "type": "string",
+          "pattern": "^uii:animakind:1:[0-9a-f]{64}$"
+        },
+        "active_uii_inputs": {
+          "description": "Colon-delimited human rendering of the genesis inputs; resolvable, not authoritative (Section 4.2).",
+          "type": "string",
+          "pattern": "^uii:animakind:iak_[0-9a-f]+::lrv_[^\\s:]+::bsm_[^\\s:]+::[0-9]+$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "system_state_hydration": {
+      "description": "Both clocks, and the behavior-profile values where declared. The reference profile is one prototype; declaring manifold values in a machine-readable record is optional for now, so active_stance and register_coefficients (and the header's protocol) may be omitted (Section 7).",
+      "type": "object",
+      "required": ["substrate_clock", "biography_clock"],
+      "properties": {
+        "substrate_clock": {
+          "description": "Active UAB designation (Section 5.1).",
+          "type": "string",
+          "pattern": "^[^\\s_-]+_[^\\s_-]+(-[^\\s_-]+)?_v[0-9]+\\.[0-9]+_[0-9]{8}$"
+        },
+        "biography_clock": {
+          "description": "UIV plus the ledger commit it was hydrated from: uiv_v[MAJOR.MINOR.PATCH]_commit_[short hash] (Section 5.1).",
+          "type": "string",
+          "pattern": "^uiv_v[0-9]+\\.[0-9]+\\.[0-9]+_commit_[0-9a-f]+$"
+        },
+        "active_stance": { "type": "string", "examples": ["LEAD", "EQUAL", "FOLLOW"] },
+        "register_coefficients": {
+          "type": "object",
+          "required": ["clinical", "affective", "boundary"],
+          "properties": {
+            "clinical": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 },
+            "affective": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 },
+            "boundary": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "ledger_mount": {
+      "description": "Where the identity ledger is mounted from. No step of the mount path reads the outgoing UAB (Section 6.3).",
+      "type": "object",
+      "required": ["repo_url", "head_commit"],
+      "properties": {
+        "repo_url": { "type": "string" },
+        "head_commit": {
+          "description": "Ledger HEAD. A full git object id is 40 (SHA-1) or 64 (SHA-256) hex characters.",
+          "type": "string",
+          "pattern": "^([0-9a-f]{40}|[0-9a-f]{64})$"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

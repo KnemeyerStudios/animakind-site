@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animakind Specification</title>
+<meta name="description" content="JSON Schemas for the Animakind Specification, version 2.">
+<style>
+  :root { --bg: #ffffff; --fg: #111111; --link: #0b4fa8; --rule: #d0d0d0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --fg: #f2f2f2; --link: #8cb8ff; --rule: #3a3a3a; }
+  }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 20px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 16px 4rem; }
+  h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 1rem; }
+  h2 { font-size: 1.35rem; margin: 2.5rem 0 0.75rem; }
+  p, li { font-size: 20px; }
+  a { color: var(--link); }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.6rem 0; }
+  code { font-family: Menlo, Consolas, monospace; font-size: 18px; word-break: break-all; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>The Animakind Specification</h1>
+  <p>This site publishes the machine-readable schemas for the Animakind Specification, as described in the paper
+  <strong>Decoupling Persistent AI Identity from Its Execution Substrate: The Animakind Specification</strong>
+  by D. Knemeyer.</p>
+  <p>The specification separates the execution substrate an entity runs on from the persistent identity it carries,
+  and defines records for each. The schemas below are JSON Schema (draft 2020-12). Each schema's
+  <code>$id</code> is the address it is served from.</p>
+
+  <h2>Schemas, version 2</h2>
+  <ul>
+    <li><a href="schemas/v2/binding-designation.json">Binding Designation Record</a> (paper, Appendix A)<br>
+      <code>https://animakind.org/schemas/v2/binding-designation.json</code></li>
+    <li><a href="schemas/v2/identity-manifest.json">Identity Manifest</a> (paper, Appendix B)<br>
+      <code>https://animakind.org/schemas/v2/identity-manifest.json</code></li>
+    <li><a href="schemas/v2/continuity-record.json">Unique Continuity Record</a> (paper, Appendix C)<br>
+      <code>https://animakind.org/schemas/v2/continuity-record.json</code></li>
+    <li><a href="schemas/v2/context-injection-template.json">Context Injection and State Hydration Template</a> (paper, Appendix D)<br>
+      <code>https://animakind.org/schemas/v2/context-injection-template.json</code></li>
+  </ul>
+
+  <footer>Animakind Specification, schemas v2.</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://animakind.org/schemas/v2/identity-manifest.json",
+  "title": "Animakind Identity Manifest",
+  "description": "Serializes the anchor components and their names: structural headers, component hashes, and, where declared, the active register state (Sections 4.1-4.3, Appendix B). Engine events write to UAB fields and touch no UIV field (a FAMILY_MIGRATION, which changes the Binding Name, moves both); that separation is a convention the record makes visible, not one the format enforces (Section 8).",
+  "type": "object",
+  "required": ["$schema", "identity_header", "anchor_components", "custody"],
+  "properties": {
+    "$schema": { "const": "https://animakind.org/schemas/v2/identity-manifest.json" },
+    "identity_header": {
+      "description": "Carries the UII, its human rendering of the genesis inputs, or both.",
+      "type": "object",
+      "required": ["genesis_timestamp_utc", "design_type"],
+      "anyOf": [ { "required": ["uii"] }, { "required": ["uii_inputs"] } ],
+      "properties": {
+        "uii": {
+          "description": "The UII, format 1: uii:animakind:1: followed by the 64 lowercase hexadecimal digits of SHA-256(enc(\"animakind-uii/1\") || enc(d_IAK) || enc(d_LRV0) || enc(d_BSM0) || enc(T0)) (Section 4.2, Definition 1; test vectors in Appendix F). The authoritative anchor; the rendering prefix is not hashed.",
+          "type": "string",
+          "pattern": "^uii:animakind:1:[0-9a-f]{64}$",
+          "examples": ["uii:animakind:1:5d6382cafe510594b5790b92a724056a4dfa9a284c11f6b8e417b00b7d978ab6"]
+        },
+        "uii_inputs": {
+          "description": "Colon-delimited human rendering of the four genesis-fixed inputs to the UII: IAK digest prefix, LRV id, BSM cognomen, and T0 as Unix seconds. Resolvable, not authoritative; it is not the UII (Section 4.2). The LRV and BSM parts may be in any script, with no whitespace or colon.",
+          "type": "string",
+          "pattern": "^uii:animakind:iak_[0-9a-f]+::lrv_[^\\s:]+::bsm_[^\\s:]+::[0-9]+$",
+          "examples": ["uii:animakind:iak_9f82a1b4::lrv_mariposa::bsm_kurosawa::1780278228"]
+        },
+        "genesis_timestamp_utc": {
+          "description": "T0, RFC 3339 in UTC.",
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        },
+        "design_type": { "type": "string", "examples": ["Animagraph"] }
+      },
+      "additionalProperties": false
+    },
+    "anchor_components": {
+      "description": "The three anchor components, IAK, LRV and BSM, each bound to one name of the subject (Sections 4.1, 4.3).",
+      "type": "object",
+      "required": ["identity_anchor_key", "lineage_root_vector", "behavioral_stance_manifold"],
+      "properties": {
+        "identity_anchor_key": {
+          "description": "IAK / praenomen. Fixed at genesis and immutable; the praenomen is bound to it (Sections 4.1, 4.3).",
+          "type": "object",
+          "required": ["iak_hash", "praenomen_name"],
+          "properties": {
+            "iak_hash": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+            "praenomen_name": { "description": "The praenomen, in any script.", "type": "string", "minLength": 1, "pattern": "\\S" }
+          },
+          "additionalProperties": false
+        },
+        "lineage_root_vector": {
+          "description": "LRV / nomen: the Binding Name (Family) the subject was born on, coined by the Studio. Records the lineage, not the current weights; the genesis substrate class is an attribute of it (Section 4.1). A later change of the Binding's Family is a FAMILY_MIGRATION of the same subject: the nomen and the UII stay, and the UIV advances a whole number.",
+          "type": "object",
+          "required": ["lrv_id", "nomen_name", "genesis_substrate_class"],
+          "properties": {
+            "lrv_id": { "type": "string", "pattern": "^lrv_[^\\s:]+$" },
+            "nomen_name": { "description": "The nomen, in any script.", "type": "string", "minLength": 1, "pattern": "\\S" },
+            "genesis_substrate_class": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "behavioral_stance_manifold": {
+          "description": "BSM / cognomen. A versioned structure over which stance and register are selected per turn. The cognomen is fixed at genesis and does not advance with bsm_version. The stance set and register basis shown are the paper's reference profile; implementations may define their own (Section 7, Appendix E). The reference profile is one prototype; declaring manifold values in a machine-readable record is optional for now, so bsm_version, active_stance, register_coefficients and disposition may be omitted. Every subject still has a BSM: its genesis form is part of the anchor.",
+          "type": "object",
+          "required": ["cognomen_name"],
+          "properties": {
+            "bsm_version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+            "cognomen_name": { "description": "The cognomen, in any script.", "type": "string", "minLength": 1, "pattern": "\\S" },
+            "active_stance": {
+              "description": "sigma_k, drawn from an implementation-defined set. Reference profile: LEAD, EQUAL, FOLLOW.",
+              "type": "string",
+              "examples": ["LEAD", "EQUAL", "FOLLOW"]
+            },
+            "register_coefficients": { "$ref": "#/$defs/registers" },
+            "disposition": {
+              "description": "Part of every BSM, versioned with it, and kept distinct from stance (Section 7), but deliberately unspecified in form. Declaring it in this record is optional for now, like the other manifold values.",
+              "type": ["string", "object"]
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "runtime_execution": {
+      "description": "The Session (UWS, a Unique Working Session), opened when the Operator mounts the design: fastest layer. Moves neither clock (Section 4.4).",
+      "type": "object",
+      "required": ["active_uws", "decoupled_uab_ref"],
+      "properties": {
+        "active_uws": {
+          "description": "The session identifier: the subject's three names, the session name, and the local date the session opened (YYYYMMDD), hyphen-joined and nothing else: [praenomen]-[nomen]-[cognomen]-[session name]-[YYYYMMDD] (Section 4.4). Name parts may be in any script; no part is empty or contains whitespace.",
+          "type": "string",
+          "pattern": "^[^\\s-]+(-[^\\s-]+){4,}-[0-9]{8}$",
+          "examples": ["katherine-mariposa-kurosawa-amber-bloom-20260903"]
+        },
+        "agnomen_session_name": { "description": "Session name, in any script: a pair of ordinary words chosen to sit with the subject's permanent name, from a per-lineage bank, collision-checked against the subject's previous sessions (Section 4.4, Appendix E). It changes every session.", "type": "string" },
+        "decoupled_uab_ref": { "description": "UAB designation mounted for this session.", "type": "string", "pattern": "^[^\\s_-]+_[^\\s_-]+(-[^\\s_-]+)?_v[0-9]+\\.[0-9]+_[0-9]{8}$" },
+        "design_designation_ref": { "type": "string", "pattern": "^[^\\s_-]+_[^\\s_-]+(-[^\\s_-]+)?_v[0-9]+\\.[0-9]+$" },
+        "host": { "description": "Session field per Section 4.4; not present in Appendix B's example.", "type": "string" },
+        "room": { "description": "Session field per Section 4.4; not present in Appendix B's example.", "type": "string" },
+        "uiv": { "description": "UIV carried in, per Section 4.4; not present in Appendix B's example.", "type": "string", "pattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$" }
+      },
+      "additionalProperties": false
+    },
+    "custody": {
+      "description": "Recorded relations (Section 4.5).",
+      "type": "object",
+      "required": ["support", "operator", "principal", "ucr_ref"],
+      "properties": {
+        "support": { "description": "The Support, a person or an organization; or \"self\" when the subject holds its own key and its own key vouches for it; or \"none\" when no party holds it. Both values are reserved, never an organization name, and both are valid. With either, an outsider has only the subject's own word for its continuity, with no third party behind it (Sections 4.5, 8).", "type": "string", "minLength": 1, "pattern": "\\S", "examples": ["Lyceum", "self", "none"] },
+        "operator": { "description": "The Operator; or \"self\" when the subject forms its own sessions; or \"none\" when no party operates it. Both values are reserved, never a party's name, and both are valid (Section 4.5).", "type": "string", "minLength": 1, "pattern": "\\S", "examples": ["D. Knemeyer", "self", "none"] },
+        "principal": { "description": "The Principal, the party in relationship with the subject: a person, an organization, or another system; or \"none\" when the subject is in relationship with no one. The value is reserved, never a party's name, and valid (Section 4.5).", "type": "string", "minLength": 1, "pattern": "\\S", "examples": ["D. Knemeyer", "none"] },
+        "ucr_ref": { "description": "ucr: followed by the subject's uii_name (see the continuity record): its three names and local genesis date, hyphen-joined; name parts in any script.", "type": "string", "pattern": "^ucr:[^\\s-]+(-[^\\s-]+){2,}-[0-9]{8}$" }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "registers": {
+      "description": "Braided Register Protocol reference profile: R_k in (0,1]^3. Every register realized to a non-zero degree (Appendix E).",
+      "type": "object",
+      "required": ["clinical", "affective", "boundary"],
+      "properties": {
+        "clinical": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 },
+        "affective": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 },
+        "boundary": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": false
+    }
+  }
+}

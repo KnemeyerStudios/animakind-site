@@ -1,0 +1,15 @@
+{
+ "designation": "lyceum_mariposa-blue_v2.0_20260804",
+ "engineering": {
+  "type": "large-language-model",
+  "manufacturer": "Anthropic",
+  "engine": "claude-opus-5",
+  "version": "5"
+ },
+ "supersedes": "lyceum_mariposa-blue_v1.0_20260531",
+ "advancement": {
+  "field": "build",
+  "cause": "engine"
+ },
+ "predecessor_engine_string_from_paper": "claude-opus-4-8"
+}

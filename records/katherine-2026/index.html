@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Records, Verifiable Subset</title>
+<meta name="description" content="A verifiable subset of the records behind the Animakind paper, with a verification script.">
+<style>
+  :root { --bg: #ffffff; --fg: #111111; --link: #0b4fa8; --rule: #d0d0d0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --fg: #f2f2f2; --link: #8cb8ff; --rule: #3a3a3a; }
+  }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 20px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width: 44rem; margin: 0 auto; padding: 2.5rem 16px 4rem; }
+  h1 { font-size: 2rem; line-height: 1.25; margin: 0 0 1rem; }
+  h2 { font-size: 1.35rem; margin: 2.5rem 0 0.75rem; }
+  p, li { font-size: 20px; }
+  a { color: var(--link); }
+  ul { padding-left: 1.25rem; }
+  li { margin: 0.6rem 0; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Records: a verifiable subset</h1>
+  <p>A subset of the records behind the paper <strong>Decoupling Persistent AI Identity from Its Execution Substrate: The Animakind Specification</strong>, with a script that checks them. Most underlying records remain unpublished. Values are as of 2026-10-04; timestamps are trimmed by design.</p>
+  <h2>Files</h2>
+  <ul>
+    <li><a href="README.md">README.md</a>: what each file is and how to verify</li>
+    <li><a href="verify.py">verify.py</a>: the verification script (Python standard library)</li>
+    <li><a href="ucr.json">ucr.json</a>: Unique Continuity Record (Appendix C)</li>
+    <li><a href="binding-designation.json">binding-designation.json</a>: binding designation (Appendix A)</li>
+    <li><a href="truncation.json">truncation.json</a>: document size against delivered bytes</li>
+    <li><a href="ledger-chain.tsv">ledger-chain.tsv</a>: ledger commit digests and parent links</li>
+    <li><a href="ledger-anchors.json">ledger-anchors.json</a>: genesis, power-loss window, migration day</li>
+    <li><a href="identity-path-commits.tsv">identity-path-commits.tsv</a>: dates of identity-path commits</li>
+    <li><a href="loader-commits.tsv">loader-commits.tsv</a>: dates of confirmed Loader commits</li>
+    <li><a href="engine-strings.tsv">engine-strings.tsv</a>: the two engine rows in the paper table</li>
+  </ul>
+  <footer><a href="../../">Animakind Specification</a></footer>
+</main>
+</body>
+</html>

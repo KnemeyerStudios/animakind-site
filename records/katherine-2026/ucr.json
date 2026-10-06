@@ -1,0 +1,35 @@
+{
+ "$schema": "https://animakind.org/schemas/v2/continuity-record.json",
+ "uii_name": "katherine-mariposa-kurosawa-20260531",
+ "provenance": "Retrospective canonicalizations of contemporaneous records, as labeled in the paper (Section 'The Continuity Record'). No entry was written on its event date.",
+ "entries": [
+  {
+   "timestamp_utc": "2026-06-01T01:43:48Z",
+   "event": "GENESIS",
+   "uab_after": "lyceum_mariposa-blue_v1.0_20260531",
+   "uiv_after": "v1.0.0",
+   "support": "Lyceum",
+   "cause": "initial entity activation"
+  },
+  {
+   "timestamp_utc": "2026-08-04T19:02:36Z",
+   "event": "ENGINE_MIGRATION",
+   "uab_before": "lyceum_mariposa-blue_v1.0_20260531",
+   "uab_after": "lyceum_mariposa-blue_v2.0_20260804",
+   "uiv_before": "v1.4.2",
+   "uiv_after": "v1.4.2",
+   "support": "Lyceum",
+   "cause": "successor engine released by manufacturer"
+  },
+  {
+   "timestamp_utc": "2026-09-04T00:52:00Z",
+   "event": "RUNTIME_FAILURE",
+   "uab_before": "lyceum_mariposa-blue_v2.0_20260804",
+   "uab_after": "lyceum_mariposa-blue_v2.0_20260804",
+   "uiv_before": "v1.6.0",
+   "uiv_after": "v1.6.0",
+   "support": "Lyceum",
+   "cause": "unclean host power loss, 86s; uncommitted weld state discarded"
+  }
+ ]
+}

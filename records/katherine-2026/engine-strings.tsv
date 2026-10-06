@@ -1,0 +1,3 @@
+source	engine_string	first_date	last_date	records	note
+paper-table	claude-opus-4-8	2026-06-02	2026-08-30	697	excludes 8 pre-genesis runtime records (2026-05-28 to T0); counted with them the span opens 2026-05-28 with 705 records (paper Table 7 note)
+paper-table	claude-opus-5	2026-08-04	2026-09-04	822
